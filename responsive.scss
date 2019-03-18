@@ -1,0 +1,113 @@
+@import "variables.scss";
+
+
+@media only screen and (max-width: $xl) {
+        .hero {
+        &__slider {
+            margin-left: -25% !important;
+        }
+
+        &__image {
+            width: 50rem !important;
+        }
+}
+}
+
+@media only screen and (max-width: $l) {
+    .navbar {
+        height: 7rem !important;
+
+        &__menu li {
+            padding: 2.6rem 2.5rem !important;
+        }
+    }
+    .hero {
+        &__slider {
+            margin-left: -25% !important;
+        }
+
+        &__image {
+            width: 43rem !important;
+        }
+}
+}
+
+@media only screen and (max-width: $m) {
+
+    // h1 //
+    h1 {
+        font-size: 4rem !important;
+        line-height: 4rem !important;
+        margin-bottom: 2rem !important;
+    }
+
+    // navbar //
+    .menuicon {
+        display: block !important;
+    }
+
+    .navbar {
+        display: none !important;
+    }
+
+
+
+    // Header Hero //
+    .hero {
+        &__slider {
+            margin-left: -30% !important;
+        }
+
+        &__image {
+            width: 30rem !important;
+        }
+
+        &__slogan {
+            top: 50% !important;
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: $s) {
+
+    // Buttons //
+
+    // h1 //
+    h1 {
+        font-size: 3rem !important;
+        line-height: 3rem !important;
+        margin-bottom: 2rem !important;
+    }
+
+    .btn-group {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .btn {
+        padding: 1rem 1rem !important;
+        margin: 0.4rem 0;
+    }
+
+
+
+
+    // Header Hero //
+    .hero {
+        &__slider {
+            margin-left: -30% !important;
+        }
+
+        &__image {
+            width: 20rem !important;
+        }
+
+        &__slogan {
+            // top: 60% !important;
+        }
+    }
+}

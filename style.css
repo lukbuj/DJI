@@ -1,3 +1,56 @@
+@media only screen and (max-width: 1600px) {
+  .hero__slider {
+    margin-left: -25% !important; }
+  .hero__image {
+    width: 50rem !important; } }
+@media only screen and (max-width: 1024px) {
+  .navbar {
+    height: 7rem !important; }
+    .navbar__menu li {
+      padding: 2.6rem 2.5rem !important; }
+
+  .hero__slider {
+    margin-left: -25% !important; }
+  .hero__image {
+    width: 43rem !important; } }
+@media only screen and (max-width: 785px) {
+  h1 {
+    font-size: 4rem !important;
+    line-height: 4rem !important;
+    margin-bottom: 2rem !important; }
+
+  .menuicon {
+    display: block !important; }
+
+  .navbar {
+    display: none !important; }
+
+  .hero__slider {
+    margin-left: -30% !important; }
+  .hero__image {
+    width: 30rem !important; }
+  .hero__slogan {
+    top: 50% !important; } }
+@media only screen and (max-width: 450px) {
+  h1 {
+    font-size: 3rem !important;
+    line-height: 3rem !important;
+    margin-bottom: 2rem !important; }
+
+  .btn-group {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+
+  .btn {
+    padding: 1rem 1rem !important;
+    margin: 0.4rem 0; }
+
+  .hero__slider {
+    margin-left: -30% !important; }
+  .hero__image {
+    width: 20rem !important; } }
 * {
   box-sizing: border-box;
   margin: 0;
@@ -56,8 +109,9 @@ i {
 .menuicon {
   width: 5rem;
   height: 5rem;
-  margin-top: 1rem;
-  margin-left: 1rem;
+  position: absolute;
+  margin-top: 2rem;
+  margin-left: 2rem;
   align-items: center;
   justify-content: center;
   cursor: pointer;
