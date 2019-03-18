@@ -1,0 +1,222 @@
+// Variables //
+$color-gray: #F2F2F2;
+$color-gray-dark: #555555;
+$color-primmary: #47C1BC;
+$color-white: #fff;
+$color-black: #000;
+$color-line: #D1D1D1;
+$color-gradient-1: #4CB8C4;
+$color-gradient-2: #3CD3AD;
+$color-gradient-3: #EFEFEF;
+
+
+// Basic styles //
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+// Links //
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.2rem;
+}
+
+// Buttons //
+
+.btn {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+&__single {
+    color: $color-gray;
+    padding: 1rem 3.5rem;
+    background: $color-black;
+}
+&__gray {
+    background: $color-gray-dark;
+    }
+}
+// Headings //
+h1 {
+    font-size: 6rem;
+    line-height: 6rem;
+    margin-bottom: 3rem;
+}
+
+// Fonts //
+i {
+    font-size: 3.5rem;
+}
+.fa-times {
+    display: none;
+    cursor: pointer;
+}
+.fa-map {
+    font-size: 1.4rem;
+}
+
+.fa-search {
+    color: $color-white;
+    font-size: 1.5rem;
+}
+
+// Utilities //
+
+
+
+// Forms //
+// Search input in the navbar
+.search {
+    flex: 0 0 15%;
+    position: relative;
+    margin-top: 3.5rem;
+    &__input {
+        font-family: inherit;
+
+        padding: 0.7rem 4rem;
+        background-color: $color-gray;
+        border: none;
+        border-radius: 200px;
+        width: 90%;
+        transition: all 0.5s;
+        &:focus {
+            outline: none;
+            width:100%;
+        }
+    }
+
+    &__button {
+        position: absolute;
+        border: none;
+        padding: 0.63rem 0.8rem;
+        border-top-left-radius: 200px;
+        border-bottom-left-radius: 200px;
+        background-color: $color-primmary;
+    }
+}
+
+
+// Main styles //
+.header{
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+
+    &__menuicon {
+        width: 5rem;
+        height: 5rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        outline: none;
+        display: none;
+        z-index: 999;
+    }
+
+    &__navbar {
+        display: flex;
+        position: fixed;
+        z-index: 100;
+        width: 100%;
+        justify-content: space-between;
+        border-bottom:0.5px solid $color-gray;
+        background: white;
+    }
+
+    &__logo {
+        width: 5rem;
+        height: auto;
+        margin: 3.5rem 0 0 3rem;
+    }
+
+}
+
+// Menu //
+
+.menu-right {
+list-style: none;
+display: flex;
+
+    & li {
+        color: $color-gray-dark;
+        padding: 4rem 3rem;
+        align-items: stretch;
+        transition: 0.5s;
+        border-right: 0.5px solid $color-gray;
+        &:hover {
+        background: $color-gray;
+            color: $color-primmary;
+    }
+        }
+
+}
+
+// Header Hero //
+
+.header-hero {
+    display: flex;
+    height: 100vh;
+    &__left {
+        flex: 3;
+        background-image: linear-gradient(to top right, $color-gradient-3, $color-white);
+        display: flex;
+        position: relative;
+        flex-direction: column;
+
+    };
+    &__slogan {
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        left: 15%;
+        transform: translateY(-50%);
+        z-index: 400000;
+    }
+    &__right {
+       flex: 2;
+        background-image: linear-gradient(to bottom right, $color-gradient-1, $color-gradient-2);
+        position: relative;
+    }
+    &__slider {
+       position: absolute;
+        top: 50%;
+        margin-left: -20%;
+        transform: translateY(-50%);
+
+
+    }
+    &__image {
+        overflow: hidden;
+        width: 600px;
+        height: auto;
+    }
+    &__list {
+
+        list-style: none;
+        color: $color-white;
+        position: absolute;
+        bottom: 10%;
+        right: 15%;
+        & li {
+            padding: 0.1rem 0.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        &--active {
+            border-left: 0.5rem solid $color-white;
+            margin-left: -0.5rem;
+        }
+    }
+}

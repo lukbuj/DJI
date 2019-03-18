@@ -1,10 +1,81 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>DJI sales website</title>
+    <meta name="viewport" content="width=device-width, initail-scale=1">
+<!--    ***  Icons from fontawsome ***** -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<!--     **** Open sans font from google fonts (only light and extra bold)  ***** -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,800" rel="stylesheet">
+<!--     **** Link to website styles **** -->
     <link rel="stylesheet" href="style.css">
+
+    <title>DJI sales website</title>
 </head>
+
 <body>
+
+<!--***** HEADER SECTION *****-->
+
+<header class="header">
+    <div class="header__menuicon">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <div class="header__overlay">
+
+    </div>
+
+<nav class="header__navbar">
+   <i class="fas fa-times"></i>
+    <div class="header__logo">
+        <img src="img/dji-logo.svg" alt="DJI logo">
+    </div>
+
+    <form action="#" class="search">
+       <button class="search__button">
+           <i class="fas fa-search"></i>
+       </button>
+        <input type="text" class="search__input" placeholder="Search ...">
+    </form>
+
+        <ul class="menu-right">
+            <li><a class="menu-right__item" href="#">Professional</a></li>
+            <li><a class="menu-right__item"href="#">Ecosystem</a></li>
+            <li><a class="menu-right__item"href="#">Testimonials</a></li>
+            <li><a class="menu-right__item"href="#">StoreMap <i class="far fa-map"></i></a></li>
+        </ul>
+    </nav>
+
+
+    <div class="header-hero">
+        <div class="header-hero__left">
+        <div class="header-hero__slogan">
+           <h1>NEW DJI MAVIC PRO</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate </p>
+
+<div class="btn">
+    <a href="#" class="btn__single btn__gray">Read more</a>
+    <a href="#" class="btn__single">Order now</a>
+</div>
+       </div>
+        </div>
+        <div class="header-hero__right">
+        <div class="header-hero__slider">
+        <img src="img/hero_image.png" alt="Mavic Pro" class="header-hero__image">
+        </div>
+        <ul class="header-hero__list">
+        <li>Spark</li>
+        <li class="header-hero__list--active">Mavic Pro</li>
+        <li>Mavic Air</li>
+        </ul>
+        </div>
+
+    </div>
+</header>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/dji-scripts"></script>
 
 </body>
 </html>
