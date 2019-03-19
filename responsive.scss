@@ -52,6 +52,11 @@
     .header {
         perspective: 75rem  !important;
     }
+
+    .header.open .navbar {
+        transform: rotateY(0deg) !important;
+    }
+
     .menuicon {
         display: block!important;
         position: fixed;

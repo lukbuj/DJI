@@ -1,9 +1,10 @@
-selector(s:".menuicon").addEventListener('click', function () {
-    this.classList.toggle(token:'open');
+selectorAdder('.menuicon').addEventListener('click', function () {
+    this.classList.toggle('open');
+    selectorAdder('.header').classList.toggle('open');
+    selectorAdder('.overlay').classList.toggle('open');
 });
 
 
-function selector(s) {
+function selectorAdder(s) {
     return document.querySelector(s);
 };
-
