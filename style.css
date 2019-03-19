@@ -161,10 +161,9 @@ i {
   transition: opacity 1s; }
 
 .menuicon {
-  padding: 2rem 2.5rem;
   position: fixed;
-  margin-top: 2rem;
-  right: 2rem;
+  margin-top: 3rem;
+  right: 3rem;
   cursor: pointer;
   outline: none;
   display: none;
@@ -182,25 +181,33 @@ i {
   right: 0;
   bottom: 0;
   margin: auto;
-  position: absolute;
+  position: relative;
   transition: all 0.65s; }
 
 .bar::before {
-  top: -2rem; }
+  position: absolute;
+  bottom: 2rem; }
 
 .bar::after {
+  position: absolute;
   top: 2rem; }
 
 .open .bar {
   background: transparent; }
 
 .open .bar::before {
-  position: absolute;
-  transform: rotateX(45deg); }
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: rotate(45deg); }
 
 .open .bar::after {
-  position: absolute;
-  transform: rotateX(-45deg); }
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: rotate(-45deg); }
 
 .navbar {
   display: flex;
