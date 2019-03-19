@@ -2,7 +2,7 @@
 
 
 @media only screen and (max-width: $xl) {
-        .hero {
+    .hero {
         &__slider {
             margin-left: -25% !important;
         }
@@ -10,7 +10,7 @@
         &__image {
             width: 50rem !important;
         }
-}
+    }
 }
 
 @media only screen and (max-width: $l) {
@@ -21,6 +21,7 @@
             padding: 2.6rem 2.5rem !important;
         }
     }
+
     .hero {
         &__slider {
             margin-left: -25% !important;
@@ -29,7 +30,7 @@
         &__image {
             width: 43rem !important;
         }
-}
+    }
 }
 
 @media only screen and (max-width: $m) {
@@ -40,9 +41,11 @@
         line-height: 3rem !important;
         margin-bottom: 1.5rem !important;
     }
+
     .btn-group {
         margin-top: 2rem;
     }
+
     .btn {
         padding: 1rem 1.5rem !important;
         margin: 0.4rem 0;
@@ -50,7 +53,14 @@
 
     // navbar //
     .header {
-        perspective: 75rem  !important;
+        perspective: 75rem !important;
+    }
+
+
+    .open .overlay {
+        opacity: 1;
+        z-index: 99999998;
+        transform: scaleX(1);
     }
 
     .header.open .navbar {
@@ -58,7 +68,7 @@
     }
 
     .menuicon {
-        display: block!important;
+        display: block !important;
         position: fixed;
     }
 
@@ -76,13 +86,16 @@
         transform: rotateY(180deg) !important;
         transform-origin: top left !important;
         transition: 0.65s cubic-bezier(0.55, 0.55, 0.675, 0.1) !important;
+
         &__logo {
             order: 1;
             align-self: center;
         }
+
         &__search {
             order: 3;
             align-self: center;
+
             &--input {
                 width: 100% !important;
             }
@@ -91,6 +104,7 @@
         &__menu {
             flex-direction: column !important;
             order: 2;
+
             & li {
                 text-align: center;
                 border-right: none !important;

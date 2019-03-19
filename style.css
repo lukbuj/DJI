@@ -27,7 +27,12 @@
     margin: 0.4rem 0; }
 
   .header {
-    perspective: 75rem  !important; }
+    perspective: 75rem !important; }
+
+  .open .overlay {
+    opacity: 1;
+    z-index: 99999998;
+    transform: scaleX(1); }
 
   .header.open .navbar {
     transform: rotateY(0deg) !important; }
@@ -154,11 +159,6 @@ i {
   transform: scaleX(0);
   opacity: 0;
   transition: opacity 1s; }
-
-.open .overlay {
-  opacity: 1;
-  z-index: 99999998;
-  transform: scaleX(1); }
 
 .menuicon {
   padding: 2rem 2.5rem;

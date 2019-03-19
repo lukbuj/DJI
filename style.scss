@@ -76,12 +76,6 @@ i {
     transition: opacity 1s;
 }
 
-.open .overlay{
-    opacity: 1;
-    z-index: 99999998;
-    transform: scaleX(1);
-}
-
 .menuicon {
     padding: 2rem 2.5rem;
     position: fixed;
@@ -120,22 +114,22 @@ i {
 }
 
 .open .bar {
-    background: transparent ;
+    background: transparent;
 }
 
 .open .bar::before {
     position: absolute;
-    transform: rotateX(45deg) ;
+    transform: rotateX(45deg);
 }
 
 .open .bar::after {
     position: absolute;
-    transform: rotateX(-45deg) ;
+    transform: rotateX(-45deg);
 }
 
 .open .bar::before,
 .open .bar::after {
-   // top: 0 ;
+    // top: 0 ;
 }
 
 
