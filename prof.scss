@@ -1,1 +1,45 @@
 @import "variables.scss";
+
+.prof {
+    &__wrapper {
+        width: 120rem;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+    }
+
+    &__spec {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+
+    }
+
+    &__description {
+        width: 120rem;
+        text-align: center;
+        margin: 4rem auto;
+        padding: 0 6rem;
+        color: $color-gray-medium;
+    }
+}
+
+
+.slider {
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
+
+    &__item img {
+        width: 20rem;
+        height: auto;
+    }
+
+}
