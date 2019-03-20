@@ -261,7 +261,7 @@ i {
   bottom: 0;
   margin: auto;
   position: relative;
-  transition: all 0.65s; }
+  transition: all 0.2s; }
 
 .bar::before {
   position: absolute;
@@ -427,6 +427,12 @@ i {
     width: 20rem;
     height: auto; }
 
+.ecosystem {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff; }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -442,7 +448,8 @@ html {
   overflow: hidden;
   position: relative; }
 
-.prof {
+.prof,
+.ecosystem {
   padding: 5rem 0; }
 
 /*# sourceMappingURL=style.scss.map */
