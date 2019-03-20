@@ -6,6 +6,8 @@
 
 
 @media only screen and (max-width: $xl) {
+
+// Hero section //
     .hero {
         &__slider {
             margin-left: -25% !important;
@@ -13,6 +15,13 @@
 
         &__image {
             width: 50rem !important;
+        }
+    }
+
+    // Prof section //
+    .prof {
+        &__wrapper {
+            padding: 0 1rem;
         }
     }
 }
@@ -25,6 +34,12 @@
 ////////////////////////////////////
 
 @media only screen and (max-width: $l) {
+
+    h4 {
+        text-align: center !important;
+    }
+
+    //Navbar section //
     .navbar {
         height: 7rem !important;
 
@@ -32,7 +47,7 @@
             padding: 2.6rem 2.5rem !important;
         }
     }
-
+// Hero section //
     .hero {
         &__slider {
             margin-left: -25% !important;
@@ -41,6 +56,27 @@
         &__image {
             width: 43rem !important;
         }
+    }
+
+    // Prof Sectipon //
+    .prof {
+        &__wrapper {
+            flex-direction: column !important;
+            align-items: center !important;
+        }
+        &__spec {
+            max-width: 75rem !important;
+            text-align: center !important;
+            padding: 0 1rem !important;
+        }
+    }
+    .slider {
+        &__items {
+            margin-top: 1rem !important;
+            flex-direction: row !important;
+            padding: 0 1rem !important;
+        }
+
     }
 }
 
@@ -55,10 +91,18 @@
 @media only screen and (max-width: $m) {
 
     // HEADING //
-    h1 {
+    h1,
+    h2 {
         font-size: 3rem !important;
         line-height: 3rem !important;
+    }
+
+    h1 {
         margin-bottom: 1.5rem !important;
+    }
+
+    h3 {
+        font-size: 2rem !important;
     }
 
     .btn-group {
@@ -150,6 +194,38 @@
             top: 50% !important;
         }
     }
+
+    // Prof Sectipon //
+    .prof {
+        &__wrapper {
+            flex-direction: column !important;
+            align-items: center !important;
+        }
+        &__spec {
+            max-width: 75rem !important;
+            text-align: center !important;
+            padding: 0 1rem !important;
+        }
+        &__row {
+            margin: 1rem auto !important;
+        }
+    }
+    .slider {
+        width: 50rem !important;
+        img {
+            width: 50rem !important;
+        }
+        &__items {
+            margin-top: 1rem !important;
+            flex-direction: row !important;
+            padding: 0 1rem !important;
+        }
+        &__item img {
+            width: 15rem !important;
+            height: auto !important;
+        }
+
+    }
 }
 
 
@@ -161,13 +237,20 @@
 
 @media only screen and (max-width: $s) {
 
-    // Buttons //
+
+    h1,
+    h2 {
+        font-size: 2.5rem !important;
+    }
 
     // h1 //
     h1 {
-        font-size: 2.5rem !important;
         line-height: 2.5rem !important;
         margin-bottom: 1.5rem !important;
+    }
+
+    h3 {
+        font-size: 1.8rem !important;
     }
 
     .btn-group {
@@ -198,4 +281,19 @@
             // top: 60% !important;
         }
     }
+        // Prof Sectipon //
+
+    .slider {
+        width: 30rem !important;
+        img {
+            width: 30rem !important;
+        }
+
+        &__item img {
+            width: 10rem !important;
+            height: auto !important;
+        }
+
+    }
 }
+

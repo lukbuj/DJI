@@ -2,7 +2,7 @@
 
 .prof {
     &__wrapper {
-        width: 120rem;
+        max-width: 120rem;
         margin: 0 auto;
         display: flex;
         flex-direction: row;
@@ -13,24 +13,29 @@
         display: flex;
         flex-direction: column;
         align-self: center;
+        max-width: 30rem;
 
     }
 
-    &__description {
-        width: 120rem;
+    &__row {
         text-align: center;
         margin: 4rem auto;
-        padding: 0 6rem;
+        padding: 0 3rem;
         color: $color-gray-medium;
     }
 }
 
 
 .slider {
+    width: 60rem;
+    img {
+        width: 60rem;
+    }
 
     &__items {
         display: flex;
         flex-direction: column;
+
     }
 
     &__item:not(:last-child) {
