@@ -29,6 +29,10 @@
   .header {
     perspective: 75rem !important; }
 
+  .menuicon {
+    display: block !important;
+    position: fixed; }
+
   .open .overlay {
     opacity: 1;
     z-index: 99999998;
@@ -36,10 +40,6 @@
 
   .header.open .navbar {
     transform: rotateY(0deg) !important; }
-
-  .menuicon {
-    display: block !important;
-    position: fixed; }
 
   .navbar {
     margin-top: 0 !important;
@@ -98,20 +98,15 @@
     margin-left: -30% !important; }
   .hero__image {
     width: 20rem !important; } }
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-size: 10px; }
-
-html {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300; }
-
 a {
   text-decoration: none;
   color: inherit;
   font-size: 1.2rem; }
+
+h1 {
+  font-size: 6rem;
+  line-height: 6rem;
+  margin-bottom: 3rem; }
 
 .btn-group {
   margin-top: 3rem;
@@ -126,11 +121,6 @@ a {
 .btn--gray {
   background: #555555; }
 
-h1 {
-  font-size: 6rem;
-  line-height: 6rem;
-  margin-bottom: 3rem; }
-
 i {
   font-size: 3.5rem; }
 
@@ -140,10 +130,6 @@ i {
 .fa-search {
   color: #fff;
   font-size: 1.5rem; }
-
-.active {
-  border-left: 0.5rem solid #fff;
-  margin-left: -0.5rem; }
 
 .header {
   width: 100%;
@@ -268,11 +254,6 @@ i {
   background: #F2F2F2;
   color: #47C1BC; }
 
-.main {
-  width: 100%;
-  overflow: hidden;
-  position: relative; }
-
 .hero {
   display: flex;
   height: 100vh; }
@@ -319,6 +300,25 @@ i {
   padding: 0.1rem 0.5rem;
   margin-bottom: 1rem;
   font-size: 1.2rem; }
+
+.active {
+  border-left: 0.5rem solid #fff;
+  margin-left: -0.5rem; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 10px; }
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300; }
+
+.main {
+  width: 100%;
+  overflow: hidden;
+  position: relative; }
 
 /*# sourceMappingURL=style.scss.map */
 

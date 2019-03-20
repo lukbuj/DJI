@@ -1,5 +1,9 @@
 @import "variables.scss";
 
+////////////////////////////////////
+//***** X-LARGE SCREENS *****//////
+////////////////////////////////////
+
 
 @media only screen and (max-width: $xl) {
     .hero {
@@ -12,6 +16,13 @@
         }
     }
 }
+
+
+
+
+////////////////////////////////////
+//***** LARGE SCREENS *****//////
+////////////////////////////////////
 
 @media only screen and (max-width: $l) {
     .navbar {
@@ -33,9 +44,17 @@
     }
 }
 
+
+
+
+
+////////////////////////////////////
+//***** MEDIUM SCREENS *****////////
+////////////////////////////////////
+
 @media only screen and (max-width: $m) {
 
-    // h1 //
+    // HEADING //
     h1 {
         font-size: 3rem !important;
         line-height: 3rem !important;
@@ -51,11 +70,14 @@
         margin: 0.4rem 0;
     }
 
-    // navbar //
+    // NAVBAR //
     .header {
         perspective: 75rem !important;
     }
-
+        .menuicon {
+        display: block !important;
+        position: fixed;
+    }
 
     .open .overlay {
         opacity: 1;
@@ -67,10 +89,7 @@
         transform: rotateY(0deg) !important;
     }
 
-    .menuicon {
-        display: block !important;
-        position: fixed;
-    }
+
 
     .navbar {
         margin-top: 0 !important;
@@ -132,6 +151,11 @@
         }
     }
 }
+
+
+////////////////////////////////////
+//***** SMALL SCREENS *****////////
+////////////////////////////////////
 
 
 
