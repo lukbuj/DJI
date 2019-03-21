@@ -272,7 +272,7 @@ i {
   top: 2rem; }
 
 .open .bar {
-  background: transparent; }
+  display: none; }
 
 .open .bar::before {
   top: 0;
