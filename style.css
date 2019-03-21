@@ -63,9 +63,6 @@
     z-index: 99999998;
     transform: scaleX(1); }
 
-  .header.open .navbar {
-    transform: rotateY(0deg) !important; }
-
   .navbar {
     margin-top: 0 !important;
     margin-left: 0 !important;
@@ -97,6 +94,9 @@
         border-bottom: 0.5px solid #F2F2F2 !important;
         padding: 1.2rem 0 !important;
         width: 100% !important; }
+
+  .header.open .navbar {
+    transform: rotateY(0deg) !important; }
 
   .hero__slider {
     margin-left: -30% !important; }
@@ -432,6 +432,32 @@ i {
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff; }
+  .ecosystem__row {
+    justify-content: space-between;
+    margin-top: 9rem;
+    margin-bottom: 4rem; }
+  .ecosystem__card {
+    height: 40rem;
+    width: 30rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)); }
+  .ecosystem__description {
+    padding: 3.5rem;
+    text-align: center;
+    line-height: 2rem; }
+    .ecosystem__description h4 {
+      text-align: center; }
+  .ecosystem__image1, .ecosystem__image2, .ecosystem__image3 {
+    width: 100%;
+    height: 20rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden; }
+  .ecosystem__image1 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/card1.jpg); }
+  .ecosystem__image2 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/card2.jpg); }
+  .ecosystem__image3 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/card3.jpg); }
 
 * {
   box-sizing: border-box;
@@ -450,7 +476,7 @@ html {
 
 .prof,
 .ecosystem {
-  padding: 5rem 0; }
+  padding: 6rem 0; }
 
 /*# sourceMappingURL=style.scss.map */
 

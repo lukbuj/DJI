@@ -129,9 +129,7 @@
         transform: scaleX(1);
     }
 
-    .header.open .navbar {
-        transform: rotateY(0deg) !important;
-    }
+
 
 
 
@@ -176,6 +174,9 @@
                 width: 100% !important;
             }
         }
+    }
+     .header.open .navbar {
+        transform: rotateY(0deg) !important;
     }
 
 
