@@ -1,7 +1,7 @@
 @import "variables.scss";
 
 ////////////////////////////////////
-//***** X-LARGE SCREENS *****//////
+//***** X-LARGE SCREENS 1600px *****//////
 ////////////////////////////////////
 
 
@@ -30,7 +30,7 @@
 
 
 ////////////////////////////////////
-//***** LARGE SCREENS *****//////
+//***** LARGE SCREENS 1024px *****//////
 ////////////////////////////////////
 
 @media only screen and (max-width: $l) {
@@ -80,12 +80,23 @@
     }
 }
 
+// Ecosystem section //
+.ecosystem {
+    &__row {
+        margin-top: 4rem !important;
+        margin-bottom: 2rem !important;
+    }
+    &__card {
+        margin: 1rem;
+    }
+}
+
 
 
 
 
 ////////////////////////////////////
-//***** MEDIUM SCREENS *****////////
+//***** MEDIUM SCREENS 825px *****////////
 ////////////////////////////////////
 
 @media only screen and (max-width: $m) {
@@ -227,11 +238,22 @@
         }
 
     }
+
+    // Ecosystem section //
+.ecosystem {
+    &__row {
+    flex-direction: column;
+    max-width: 60rem !important;
+    }
+    &__card {
+        max-width: 100% !important;
+    }
 }
 
+}
 
 ////////////////////////////////////
-//***** SMALL SCREENS *****////////
+//***** SMALL SCREENS 450 px *****////////
 ////////////////////////////////////
 
 
@@ -296,5 +318,11 @@
         }
 
     }
+    .ecosystem {
+     &__description {
+        padding: 3rem 1.5rem !important;
+
+}
+}
 }
 

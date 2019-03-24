@@ -6,7 +6,7 @@
 @import 'prof.scss';
 @import 'ecosystem.scss';
 @import 'testimonial.scss';
-@import 'store.scss';
+@import 'footer.scss';
 
 * {
     box-sizing: border-box;
@@ -29,7 +29,9 @@ html {
 }
 
 .prof,
-.ecosystem{
+.ecosystem,
+.testimonial,
+.map{
     padding: 6rem 0;
 }
 

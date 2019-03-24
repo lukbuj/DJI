@@ -1,1 +1,16 @@
 @import "variables.scss";
+
+.testimonial {
+    &__wrapper {
+        display: grid;
+max-width: 1200px;
+        margin: 0 auto;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 20px;
+    }
+
+    &__item {
+        background: gray;
+        min-height: 200px;
+    }
+}

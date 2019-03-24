@@ -1,0 +1,24 @@
+@import "variables.scss";
+
+
+.map {
+    background-image: linear-gradient(to bottom right, #4CB8C4, #3CD3AD);
+    & h2,
+    & h3 {
+        color: $color-white;
+    }
+    &__wrapper {
+        position: relative;
+        margin: 0 auto;
+        max-width: 120rem;
+        padding-bottom: 400px / 1200px * 100%;
+        height: 0;
+        & iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

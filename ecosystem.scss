@@ -13,8 +13,7 @@
     }
 
     &__card {
-        height: 40rem;
-        width: 30rem;
+        max-width: 30rem;
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
     }
     &__description {

@@ -32,6 +32,12 @@
     margin-top: 1rem !important;
     flex-direction: row !important;
     padding: 0 1rem !important; } }
+.ecosystem__row {
+  margin-top: 4rem !important;
+  margin-bottom: 2rem !important; }
+.ecosystem__card {
+  margin: 1rem; }
+
 @media only screen and (max-width: 825px) {
   h1,
   h2 {
@@ -125,7 +131,13 @@
       padding: 0 1rem !important; }
     .slider__item img {
       width: 15rem !important;
-      height: auto !important; } }
+      height: auto !important; }
+
+  .ecosystem__row {
+    flex-direction: column;
+    max-width: 60rem !important; }
+  .ecosystem__card {
+    max-width: 100% !important; } }
 @media only screen and (max-width: 450px) {
   h1,
   h2 {
@@ -158,7 +170,10 @@
       width: 30rem !important; }
     .slider__item img {
       width: 10rem !important;
-      height: auto !important; } }
+      height: auto !important; }
+
+  .ecosystem__description {
+    padding: 3rem 1.5rem !important; } }
 a {
   text-decoration: none;
   color: inherit;
@@ -272,7 +287,7 @@ i {
   top: 2rem; }
 
 .open .bar {
-  display: none; }
+  background: transparent; }
 
 .open .bar::before {
   top: 0;
@@ -437,8 +452,7 @@ i {
     margin-top: 9rem;
     margin-bottom: 4rem; }
   .ecosystem__card {
-    height: 40rem;
-    width: 30rem;
+    max-width: 30rem;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)); }
   .ecosystem__description {
     padding: 3.5rem;
@@ -459,6 +473,33 @@ i {
   .ecosystem__image3 {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/card3.jpg); }
 
+.testimonial__wrapper {
+  display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px; }
+.testimonial__item {
+  background: gray;
+  min-height: 200px; }
+
+.map {
+  background-image: linear-gradient(to bottom right, #4CB8C4, #3CD3AD); }
+  .map h2, .map h3 {
+    color: #fff; }
+  .map__wrapper {
+    position: relative;
+    margin: 0 auto;
+    max-width: 120rem;
+    padding-bottom: 33.3333333333%;
+    height: 0; }
+    .map__wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -475,7 +516,9 @@ html {
   position: relative; }
 
 .prof,
-.ecosystem {
+.ecosystem,
+.testimonial,
+.map {
   padding: 6rem 0; }
 
 /*# sourceMappingURL=style.scss.map */
